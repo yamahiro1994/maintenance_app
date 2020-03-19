@@ -98,15 +98,21 @@ body {
 }
 
 .title {
-   color: rgb(25, 80, 72);
-   font-size: 80px;
+   height: 150px;
+   line-height: 150px;
+   font-size: 70px;
+   font-family: 'Vollkorn', serif;
+   text-align: center;
+   color: black;
 }
 
-.image {
-   background-color: orange;
+.image-btn {  
+   margin-top: 40px;
+   text-align: center;
 }
 
 #btnPlay {
-   background-color: orange;
    border: 0px;
+   background-color: orange;
 }
+

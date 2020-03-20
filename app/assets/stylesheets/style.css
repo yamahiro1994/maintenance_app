@@ -118,7 +118,7 @@ body {
 
 .title {
    height: 30px;
-   padding: 10px 15px;
+   padding: 25px 15px ;
 }
 
 
@@ -129,16 +129,15 @@ body {
 }
 
 .image-btn {  
-   margin-top: 150px;
+   margin-top: 100px;
    text-align: center;
    opacity: 0.9;
    border-radius: 5px;
    
 }
 
-.image-btn:active {
 
-}
+
 button {
    border: 0px;
    outline: none;
@@ -159,8 +158,8 @@ button:hover{
 
 button:active{
    background-color: whitesmoke;
-   padding-top: 100px;
-   padding-bottom: 150px;
+   padding-top: 80px;
+   padding-bottom: 100px;
    -webkit-box-shadow:inset 0px 0px 30px whitesmoke;
    -moz-box-shadow:inset 0px 0px 20px whitesmoke;
    box-shadow:inset 0px 0px 10px whitesmoke;

@@ -94,25 +94,75 @@ input, select {
 }
 
 body {
-   background-color: orange;
+   background-color: whitesmoke;
 }
 
-.title {
-   height: 150px;
-   line-height: 150px;
-   font-size: 70px;
+.header {
+   height:120px;
+   width: 100%;
+}
+
+.top-border {
+   height: 5px;
+   background-color:  #ffcb00;
+}
+
+.wrapper {
+   height: 130px;
+   line-height: 30px;
+   font-size: 40px;
    font-family: 'Vollkorn', serif;
    text-align: center;
    color: black;
 }
 
-.image-btn {  
-   margin-top: 40px;
-   text-align: center;
+.title {
+   height: 30px;
+   padding: 10px 15px;
 }
 
-#btnPlay {
+
+
+.bottom-border {
+   height: 5px;
+   background-color:  #ffcb00;
+}
+
+.image-btn {  
+   margin-top: 150px;
+   text-align: center;
+   opacity: 0.9;
+   border-radius: 5px;
+   
+}
+
+.image-btn:active {
+
+}
+button {
    border: 0px;
-   background-color: orange;
+   outline: none;
+   padding: 5px 10px;
+   text-decoration:none;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  background-color: whitesmoke;
+}
+
+button:hover{
+   background-color: whitesmoke;
+   -webkit-box-shadow:inset 0px 0px 30px whitesmoke;
+   -moz-box-shadow:inset 0px 0px 36px whitesmoke;
+   box-shadow:inset 0px 0px 50px whitesmoke;
+}
+
+button:active{
+   background-color: whitesmoke;
+   padding-top: 100px;
+   padding-bottom: 150px;
+   -webkit-box-shadow:inset 0px 0px 30px whitesmoke;
+   -moz-box-shadow:inset 0px 0px 20px whitesmoke;
+   box-shadow:inset 0px 0px 10px whitesmoke;
 }
 

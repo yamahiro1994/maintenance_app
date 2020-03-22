@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="ボディメンテナンス">
-  <meta name="keyword" content="清潔感, ケア, リマインダー">
-  <title>Total Maintenance</title>
+  <meta name="keyword" content="清潔感, ボディケア, アラート">
+  <title>Body Maintenance</title>
   <!--SEO対策のようなもの？-->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Deploy Timer.">
@@ -17,82 +17,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <!--CSS-->
   <link href="https://fonts.googleapis.com/css?family=Vollkorn rel="stylesheet">
+  <!--Font awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
   <!--JavaScript-->
-  <link rel="stylesheet" type="text/js" href="js/index.js">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
+  <link rel="stylesheet" type="text/js" href="js/index.js">	
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
 </head>
 
 
 <body>
-  <header>
-    <div class = "top-border"></div>
-    <div class = "wrapper">
-      <div class = "title-left-content">
-        <div class = "categories-box"></div>
+  <div class ="header">
+    <div class ="top-border"></div>
+    <div class ="wrapper">
+      <div class ="top-contents">
+        <div class ="left">
+          <div class ="my">
+            <a href = "#"><i class="far fa-clock fa-2x faa-spin animated-hover"></i>
+            </a>
+          </div>
+        </div>
+        <div class ="title">
+          <h1>Deploy Timer.</h1>
+        </div>
+        <div class ="right">
+          <div class ="question">
+            <a href = "#"><span class= "far fa-question-circle fa-2x faa-spin animated-hover"></span>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class = "title">
-        <h1>Deploy Timer.</h1>
-      <div class = "title-right-contents"></div>  
-        <div class = "icon-list">
-            <ul class = "icon-list-box">
-               <li class = my-item>
-                 <a class = "my-time" href = "#">
-                   <i class = "time-icon" aria-hidden = "ture"><i>
-                 <a>
-               <li>
-               <li class = "Question-item">
-                 <a class = "Q-page" href = "#">
-                   <i class = "Q-icon" aria-hidden = "ture"><i>
-                 <a>
-               <li>
+      <div class ="under-contents">
+        <div class ="category">
+          <div class ="choice">
             <ul>
-         </div>
-         </div>
+              <a href ="#"><li class ="face">Face</li>
+              </a>
+              <a href ="#"><li class ="upper body">Upper body</li>
+              </a>
+              <a href ="#"><li class ="lower body">Lower body</li>
+              </a>
+            </ul>
+          </div>
+        </div>  
+        </div>
+      </div>
     </div>
-    <div class = "bottom-border"></div>
-  </header>
+    <div class ="bottom-border">カテゴリー追加中!</div>
+  </div>
 
-  <main>
-    <div class = "image-btn">
+  <div class ="main">
+    <div class ="image-btn">
       <button type="button" value="Check" onclick="Alert()">
-      <img src="/assets/外人.png" style="width:220px;height:390px"></button>
+      <img src="/assets/外人.png" style="width:170px;height:320px"></button>
     </div>
   
   <script>
     function push(){
       Push.create("デプロイ注意", 
       {
-        body: "成長されました。速やかにdestroyしてください。",
+        body: "成長しました。速やかに対応してください。",
         icon: 'casley_logo.png',
-        })    
+        timeout: 5000,
+        onClick: function () {
+            location.href = 'http://localhost:3000/posts';
+            window.focus();
+            this.close();
+        }
+      })    
     }  
    
-
     var Alert = function(){
     setTimeout(push, 1000);
    }
 
-    function second(){
-      Push.create("destroyしましたか？",
-      {
-        body: "忘れていたなら、すぐアクションしてください。",
-　　icon: 'apple_logo png',
-      })
-    }
 
-    
-    setTimeout(second, 9000);
-
-    
-
-       
-
-     
+  //   function second(){
+  //     Push.create("destroyした？",
+  //     {
+  //       body: "忘れていたなら、処理しなさい。",
+  //       icon: 'apple_logo png'
+        
+  //   })
+  //   setTimeout(second, 6000);
+  // }
+  
     </script>
    
-  </main>
+  </div>
 
 
 </body>

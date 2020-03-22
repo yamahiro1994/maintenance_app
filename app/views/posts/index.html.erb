@@ -21,7 +21,7 @@
   <link rel="stylesheet" type="text/js" href="js/index.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
 </head>
 
 
@@ -56,18 +56,38 @@
 
   <main>
     <div class = "image-btn">
-      <button type="button" value="Check" onclick="myfunc()">
-      <img src="/assets/images.png" style="width:250px;height:300px"></button>
+      <button type="button" value="Check" onclick="Alert()">
+      <img src="/assets/外人.png" style="width:220px;height:390px"></button>
     </div>
   
-    <script>
-      var alertmsg = function(){
-      alert("タイマー終了");
-     }
- 
-      var myfunc = function(){
-      setTimeout(alertmsg, 1000);
-     }
+  <script>
+    function push(){
+      Push.create("デプロイ注意", 
+      {
+        body: "成長されました。速やかにdestroyしてください。",
+        icon: 'casley_logo.png',
+        })    
+    }  
+   
+
+    var Alert = function(){
+    setTimeout(push, 1000);
+   }
+
+    function second(){
+      Push.create("destroyしましたか？",
+      {
+        body: "忘れていたなら、すぐアクションしてください。",
+　　icon: 'apple_logo png',
+      })
+    }
+
+    
+    setTimeout(second, 9000);
+
+    
+
+       
 
      
     </script>

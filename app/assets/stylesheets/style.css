@@ -118,14 +118,13 @@ body {
 
 .wrapper {
    height: 150px;
-   width: 100%;
+   width: calc(100% - 40px);
    padding: 0 20px; 
 }
 
 /* top */
 .top-contents {
     height: 100px;
-    width: calc(100% - 40px);
     display: flex;
 }
 
@@ -136,15 +135,13 @@ body {
     padding-top: 20px;
 }
 
-.my {
+.nill {
     height: 40px;
     padding: 10px 0 0 30px;
 }
 
-a {
-    color: black;
-    font-size: 0.8em;
-    text-decoration: none;
+span {
+    color: black; 
 }
 
 .title {
@@ -153,7 +150,7 @@ a {
     padding-top: 20px;
 }
 
-h1 {
+h1  {
     line-height: 60px;
     text-align: center;
     color: black;
@@ -165,19 +162,22 @@ h1 {
     height: 80px;
     width: calc(100% / 3);
     padding-top: 20px;
-    position: relative;
 }
 
 .question {
     height: 40px;
-    padding: 10px 30px 0 0;
-    position: relative;
+    padding: 10px 60px 0 0;
 }
 
 span {
-    position: absolute;
-    right: 30px;
+    float: right;
     color: black;
+    font-size: 0.8em;
+    padding-left: 30px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* under */
@@ -188,24 +188,20 @@ span {
 }
 
 .category {
-    
-    height: 30px;
-    padding: 10px 170px;
+    padding: 15px 85px;
+
 }
 
-.choice {
-    line-height: 30px;
-}
-ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
+i {
+    color: black; 
+    font-size: 15px;
 }
 
 
 .bottom-border {
    height: 30px;
    width: 100%;
+   color: black;
    font-size: 13px;
    line-height: 30px;
    text-align: center;

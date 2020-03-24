@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
   <!--JavaScript-->
   <link rel="stylesheet" type="text/js" href="js/index.js">	
-  <%# <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> %>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/megamenu.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -43,34 +43,40 @@
           <h1>Deploy Timer.</h1>
         </div>
         <div class ="right">
-          <div class ="question">
-            <a href ="#"><span class= "far fa-question-circle fa-2x faa-bounce animated-hover"></span>
-            </a>
-            <a href ="#"><span class="far fa-clock fa-2x faa-bounce animated-hover"></span>
+          <div class ="account">
+            <a href ="#"><i class= "far fa-question-circle fa-lg"></i>
             </a>
           </div>
         </div>
       </div>
-      <div class ="under-contents">
-      <ul class="dropdwn">
-        <li>
+      <div class ="under-contents">     
+        <div class="drop">
+          <div class="my-page">Task
+          </div>
+          <div class ="dropdwn-text">category
           <ul class="dropdwn_menu">
-            <li><a href="#">D1</a></li>
-            <li><a href="#">D2</a></li>
-            <li><a href="#">D3</a></li>
-            <li><a href="#">D4</a></li>
-            <li><a href="#">D5</a></li>
-            <li><a href="#">D1</a></li>
-            <li><a href="#">D2</a></li>
-            <li><a href="#">D3</a></li>
-            <li><a href="#">D4</a></li>
-            <li><a href="#">D5</a></li>
+            <li><a href="#">髪</a></li>
+            <li><a href="#">眉</a></li>
+            <li><a href="#">髭</a></li>
+            <li><a href="#">肌</a></li>
+            <li><a href="#">目</a></li>
+            <li><a href="#">耳</a></li>
+            <li><a href="#">鼻</a></li>
+            <li><a href="#">口</a></li>
+            <li><a href="#">腋</a></li>
+            <li><a href="#">ギャラン</a></li>
+            <li><a href="#">手爪</a></li>
+            <li><a href="#">陰</a></li>
+            <li><a href="#">踵</a></li>
+            <li><a href="#">足爪</a></li>
           </ul>
-       </li>
-      </ul>
+          </div>
+          <div class="question">Question
+          </div>
+        </div>  
       </div>
     </div>
-    <div class ="bottom-border">[WIP]</div>
+    <div class ="bottom-border"></div>
   </div>
   
 
@@ -100,31 +106,22 @@
    }
 
 
-  //   function second(){
-  //     Push.create("destroyした？",
-  //     {
-  //       body: "忘れていたなら、処理しなさい。",
-  //       icon: 'apple_logo png'
+    function second(){
+      Push.create("destroyした？",
+      {
+        body: "忘れていたなら、処理しなさい。",
+        icon: 'apple_logo png'
         
-  //   })
-  //   setTimeout(second, 6000);
-  // }
+      })
+      setTimeout(second, 6000);
+    };
 
-  jQuery(function($){
-    moveTimer = 0;
-    hideTimer = 0;
-
-  
-      $('.dropdwn li').hover(function(){
-        menu = $(this).find('ul');
+      $('.dropdwn-text').hover(function(){
         $("ul:not(:animated)", this).slideDown();
       }, function(){
         $("ul.dropdwn_menu",this).slideUp();
       });
   
-
-
-  });
   </script>
    
   </div>

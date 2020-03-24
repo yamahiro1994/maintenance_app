@@ -1,3 +1,1 @@
-class Timer < ApplicationRecord
-  
-end
+

@@ -22,8 +22,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" />
   <!--JavaScript-->
   <link rel="stylesheet" type="text/js" href="js/index.js">	
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <%# <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> %>
+  <script src="js/megamenu.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/0.0.11/push.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 </head>
 
 
@@ -34,8 +36,7 @@
       <div class ="top-contents">
         <div class ="left">
           <div class ="nill">
-            <%# <a href = "#"><span class="far fa-caret-square-down fa-2x animated-hover"></span>
-            </a> %>
+          <!--今は空-->
           </div>
         </div>
         <div class ="title">
@@ -51,13 +52,27 @@
         </div>
       </div>
       <div class ="under-contents">
-        <div class ="category">
-          <a href ="#"><i class="fas fa-bars fa-fw">Category</i>
-        </div>
+      <ul class="dropdwn">
+        <li>
+          <ul class="dropdwn_menu">
+            <li><a href="#">D1</a></li>
+            <li><a href="#">D2</a></li>
+            <li><a href="#">D3</a></li>
+            <li><a href="#">D4</a></li>
+            <li><a href="#">D5</a></li>
+            <li><a href="#">D1</a></li>
+            <li><a href="#">D2</a></li>
+            <li><a href="#">D3</a></li>
+            <li><a href="#">D4</a></li>
+            <li><a href="#">D5</a></li>
+          </ul>
+       </li>
+      </ul>
       </div>
     </div>
-    <div class ="bottom-border">カテゴリー追加中</div>
+    <div class ="bottom-border">[WIP]</div>
   </div>
+  
 
   <div class ="main">
     <div class ="image-btn">
@@ -94,12 +109,27 @@
   //   })
   //   setTimeout(second, 6000);
   // }
+
+  jQuery(function($){
+    moveTimer = 0;
+    hideTimer = 0;
+
   
-    </script>
+      $('.dropdwn li').hover(function(){
+        menu = $(this).find('ul');
+        $("ul:not(:animated)", this).slideDown();
+      }, function(){
+        $("ul.dropdwn_menu",this).slideUp();
+      });
+  
+
+
+  });
+  </script>
    
   </div>
 
-
+  
 </body>
 
 </html>

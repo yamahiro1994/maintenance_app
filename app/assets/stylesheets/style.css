@@ -169,13 +169,17 @@ h1  {
     padding-top: 20px;
 }
 
+.account{
+    height: 40px;
+    padding: 10px 30px;
+}
+
 a {
     text-decoration: none;
+    color: black;
 }
 
 /* under */
-
-
 
 i {
     float: right;
@@ -184,23 +188,17 @@ i {
     padding-left: 30px;
 }
 
-/* .my-pege{
-    width: calc(100% / 3);
-} */
-
+/* ドロップダウンメニュー */
 .drop {
     padding: 15px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .dropdwn-text {
     font-size: 20px;
 }
 
-.question {
-
-}
 
 ul{
     display: flex;
@@ -212,10 +210,10 @@ ul{
 }
 
 li{
-    max-width: 1500px;
+    max-width: 1200px;
     padding: 10px 5px;
     display: block;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .dropdwn > li {
@@ -241,15 +239,19 @@ li{
     margin: -5px 5px -5px -5px;
     display: block;
     color: white;
-    width: calc(100vw / 3);
+    width: calc(100vw / 5);
     height: 50px;
 }
 
 li a:hover{
-    background: #ffcb00;
+    background: yellow;
     color: black;
 }
 
+
+.question {
+
+}
 
 .bottom-border {
    height: 30px;

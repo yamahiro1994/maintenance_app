@@ -8,9 +8,65 @@
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
   </head>
-
   <body>
+    <div class ="header">
+      <div class ="top-border"></div>
+      <div class ="wrapper">
+        <div class ="top-contents">
+          <div class ="left">
+            <div class ="nill">
+            <!--今は空-->
+            </div>
+          </div>
+          <div class ="title">
+            <h1>Deploy Timer.</h1>
+          </div>
+          <div class ="right">
+            <div class ="account">
+              <a href ="#"><i class= "far fa-question-circle fa-lg"></i>
+              </a>
+              <a href ="#"><i class= "far fa-question-circle fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class ="under-contents">     
+          <div class="drop">
+            <div class="dropdwn-text">Head
+            <ul class="dropdwn_menu">
+              <li><a href="#">髪</a></li>
+              <li><a href="#">眉</a></li>
+              <li><a href="#">髭</a></li>
+              <li><a href="#">耳</a></li>
+            </ul>
+            </div>
+            <div class ="dropdwn-text">Face
+            <ul class="dropdwn_menu">
+              <li><a href="#">肌</a></li>
+              <li><a href="eye.html">目</a></li>      
+              <li><a href="#">鼻</a></li>
+              <li><a href="#">口</a></li>
+            </ul>
+            </div>
+            <div class="dropdwn-text">Body
+            <ul class="dropdwn_menu">
+              <li><a href="#">腋</a></li>
+              <li><a href="#">ギャラン</a></li>
+              <li><a href="#">手爪</a></li>
+            </ul>
+            </div>
+            <div class="dropdwn-text">Lower Body
+            <ul class="dropdwn_menu">
+              <li><a href="#">陰</a></li>
+              <li><a href="#">踵</a></li>
+              <li><a href="#">足爪</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class ="bottom-border"></div>
+  </div>
     <%= yield %>
-  <%# <script src="timer.js"></script> %>
   </body>
 </html>

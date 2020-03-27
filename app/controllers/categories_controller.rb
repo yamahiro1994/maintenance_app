@@ -1,4 +1,4 @@
 class CategoriesController < ApplicationController
-   def show
+   def index
    end
 end

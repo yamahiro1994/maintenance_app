@@ -1,0 +1,2 @@
+module EyebrowsHelper
+end

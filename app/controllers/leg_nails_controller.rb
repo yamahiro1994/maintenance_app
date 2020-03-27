@@ -1,0 +1,2 @@
+class LegNailsController < ApplicationController
+end

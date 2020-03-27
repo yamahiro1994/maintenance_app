@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
-  get 'posts', to: 'posts#index'
-  resources :Posts, only: [:index]
+  root 'posts#index'
+  resources :posts
+  resources :hairs
+  resources :eyebrows
+  resources :skins
+  resources :ears
+  resources :noses
+  resources :beards
+  resources :categories
+  resources :mouths
 end

@@ -1,0 +1,2 @@
+module ArmpitsHelper
+end

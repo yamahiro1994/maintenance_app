@@ -9,4 +9,9 @@ Rails.application.routes.draw do
   resources :beards
   resources :categories
   resources :mouths
+  resources :armpits
+  resources :garandus
+  resources :fingernails
+  resources :heels
+  resources :leg_nails
 end

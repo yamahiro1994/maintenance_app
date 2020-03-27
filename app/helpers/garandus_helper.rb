@@ -1,0 +1,2 @@
+module GarandusHelper
+end

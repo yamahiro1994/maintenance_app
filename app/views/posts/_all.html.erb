@@ -35,11 +35,11 @@
       <div class ="top-contents">
         <div class ="left">
           <div class ="nill">
-          <!--今は空-->
+          <!--左上今は空-->
           </div>
         </div>
         <div class ="title">
-          <h1>Deploy Timer.</h1>
+          <h1><%= link_to "Deploy Timer.", '/', class: "title-text" %><h1>
         </div>
         <div class ="right">
           <div class ="account">
@@ -50,7 +50,7 @@
           </div>
         </div>
       </div>
-      <div class ="under-contents">     
+      <div class ="under-contents">
         <div class="drop">
           <div class="dropdwn-text">Head
           <ul class="dropdwn_menu">
@@ -87,25 +87,27 @@
     </div>
     <div class ="bottom-border"></div>
   </div>
-  
 
-  <%# <div class ="main">
-    <div class ="image-btn">
-      <button type="button" value="Check" onclick="Alert()">
-      <img src="/assets/外人.png" style="width:270px;height:420px"></button>
-    </div>
-  </div> %>
-  
 
   <script>
+      function Alert(){
+        s = setTimeout(push, 2000); 
+        c = setTimeout(second, 4000);
+      }
+        
+      function stop(){
+        clearTimeout(s);
+        clearTimeout(c);
+      }
+         
       function push(){
         Push.create("デプロイ注意", 
         {
           body: "成長しました。速やかに対応してください。",
-          icon: 'casley_logo.png',
+          icon: "/assets/men.png",
           timeout: 5000,
-          onClick: function () {
-              location.href = 'http://localhost:3000/posts';
+          onClick: function() {
+              location.href = 'http://localhost:3000';
               window.focus();
               this.close();
           }
@@ -116,21 +118,15 @@
         Push.create("destroyした？",
         {
           body: "忘れていたなら、処理しなさい。",
-          icon: 'apple_logo png',
-          timeout: 5000,
+          icon: '/assets/men.png',
+          timeout: 7000,
           onClick: function () {
-              location.href = 'http://localhost:3000/posts';
+              location.href = 'http://localhost:3000';
               window.focus();
               this.close();
           }
         })
       } 
-
-        var Alert = function(){
-          setTimeout(push, 1000);
-            setTimeout(second, 4000);
-        }
-      
       // ドロップダウンメニュー
       $('.dropdwn-text').hover(function(){
         $("ul:not(:animated)", this).slideDown();

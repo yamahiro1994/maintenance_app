@@ -213,7 +213,6 @@ li{
     padding: 10px 10px;
     display: block;
     cursor: pointer;
-    /* z-index: 500; */
 }
 
 .dropdwn > li {
@@ -221,18 +220,17 @@ li{
 }
 
 .dropdwn_menu{
-    height: 350px;
+    height: 300px;
     width: 100vw;
     position: absolute;
     left: 0;
     display: none;
-    box-shadow: 5px 5px 5px rgba( 88, 157, 216, 0.5);
+    box-shadow: 5px 5px 5px rgba( 159, 160, 160);
 }
 
 .dropdwn_menu li{
     width: 100%;
     background-color: white;
-    /* z-index: 200; */
 }
 
 .dropdwn_menu li a{
@@ -245,12 +243,12 @@ li{
 }
 
 li a:hover{
-    background: rgb(238, 255, 255);
+    background: rgb(255, 255, 239);
 }
 
 
 .bottom-border {
-   height: 30px;
+   height: 20px;
    width: 100%;
    color: black;
    font-size: 13px;
@@ -262,13 +260,13 @@ li a:hover{
 
 /* main */
 .main{
-    height: 500px;
+    /* height: 600px; */
     overflow: scroll;
     padding-top: 187px;
 }
 
 .image-btn {  
-   margin-top: 50px;
+   margin-top: 30px;
    text-align: center;
    border-radius: 5px;
 }
@@ -297,4 +295,31 @@ button:active{
    -moz-box-shadow:inset 0px 0px 20px white;
    box-shadow:inset 0px 0px 10px white;
 }
+/* キャセルボタン */
+input {
+    width: 90vw;
+    font-size: 20px;
+    margin-top: 20px;
+    /* border: 0px; */
+    border-radius: 10px;
+    outline: none;
+    padding: 5px 10px;
+    /* text-decoration:none; */
+    /* border-radius:3px; */
+    background-color: white;
+ }
 
+input:hover{
+    background-color: yellowgreen;
+    -webkit-box-shadow:inset 0px 0px 30px;
+    -moz-box-shadow:inset 0px 0px 36px;
+    box-shadow:inset 0px 0px 50px;
+ }
+
+ input:active{
+    padding-top: 5px;
+    padding-bottom: 7px;
+    -webkit-box-shadow:inset 0px 0px 30px;
+    -moz-box-shadow:inset 0px 0px 20px;
+    box-shadow:inset 0px 0px 10px;
+ }

@@ -263,11 +263,11 @@ li a:hover{
     /* height: 600px; */
     overflow: scroll;
     padding-top: 187px;
+    text-align: center;
 }
 
 .image-btn {  
-   margin-top: 30px;
-   text-align: center;
+   margin-top: 10px;
    border-radius: 5px;
 }
 
@@ -297,15 +297,12 @@ button:active{
 }
 /* キャセルボタン */
 input {
-    width: 90vw;
+    width: 80vw;
     font-size: 20px;
-    margin-top: 20px;
-    /* border: 0px; */
+    margin-top: 30px;
     border-radius: 10px;
     outline: none;
     padding: 5px 10px;
-    /* text-decoration:none; */
-    /* border-radius:3px; */
     background-color: white;
  }
 

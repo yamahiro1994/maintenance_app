@@ -34,8 +34,8 @@
     <div class ="wrapper">
       <div class ="top-contents">
         <div class ="left">
-          <div class ="nill">
-          <!--左上今は空-->
+          <div class ="user">
+          <!--user登録_今後実装する-->
           </div>
         </div>
         <div class ="title">
@@ -64,7 +64,7 @@
           <ul class="dropdwn_menu">
             <li><a href="skins#index">肌</a></li>
             <li><a href="categories#index">目</a></li>
-            <li><a href="noses#index">鼻</a></li>
+            <li><a href="noses#index"><img src="/assets/外人.png"></a></li>
             <li><a href="mouths#index">口</a></li>
           </ul>
           </div>
@@ -91,13 +91,13 @@
 
   <script>
       function Alert(){
-        s = setTimeout(push, 2000); 
-        c = setTimeout(second, 4000);
+        s = setTimeout(push, 1000); 
+        c = setInterval(second, 6000);
       }
         
       function stop(){
         clearTimeout(s);
-        clearTimeout(c);
+        clearInterval(c);
       }
          
       function push(){
